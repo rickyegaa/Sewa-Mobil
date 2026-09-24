@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SewaMobil - Mudah, Cepat, Terpercaya</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span class="text-blue">Sewa</span><span class="text-orange">Mobil</span></div>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#beranda" class="active-link">Beranda</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#armada">Armada</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="#" class="btn-login">Login</a>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bagian Banner -->
+        <section id="beranda" class="hero">
+            <div class="hero-left">
+                <h1>Sewa Mobil Mudah, Cepat, dan <span class="text-blue">Terpercaya</span></h1>
+                <p>Temukan kendaraan yang sempurna untuk perjalanan liburan atau bisnis Anda berikutnya. Nikmati harga terbaik dengan pelayanan premium.</p>
+                
+                <div class="search-box">
+                    <div class="input-group">
+                        <label>Lokasi Penjemputan</label>
+                        <input type="text" placeholder="Kota atau Bandara">
+                    </div>
+                    <div class="input-group">
+                        <label>Tanggal Sewa</label>
+                        <input type="date">
+                    </div>
+                    <button class="btn-search">Cari Mobil</button>
+                </div>
+            </div>
+            
+            <div class="car-right">
+                <div class="hero-image">
+                    <img src="https://itstimeforeveryone.toyota.astra.co.id/images/bZ4X_Platinum_White_Pearl.png" alt="Ilustrasi Mobil Toyota">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Layanan ) -->
+        <section id="layanan" class="features">
+            <div class="section-title">
+                <h2>Mengapa Memilih Kami?</h2>
+                <p>Kami menawarkan pelayanan terbaik untuk kenyamanan perjalanan Anda.</p>
+            </div>
+            
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fas fa-tag"></i></div>
+                    <h3>Harga Terbaik</h3>
+                    <p>Kami menjamin harga sewa yang kompetitif tanpa biaya tersembunyi. Sesuai dengan budget Anda.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fas fa-car"></i></div>
+                    <h3>Armada Terawat</h3>
+                    <p>Semua kendaraan kami diservis secara berkala untuk memastikan keamanan dan kenyamanan optimal.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle"><i class="fas fa-headset"></i></div>
+                    <h3>Layanan 24/7</h3>
+                    <p>Tim support kami siap membantu Anda kapan saja, memastikan perjalanan Anda lancar tanpa hambatan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Armada -->
+        <section id="armada" class="fleet-section">
+            <div class="section-title">
+                <h2>Pilihan Armada Kami</h2>
+                <p>Pilih mobil yang sesuai dengan kebutuhan Anda</p>
+            </div>
+            
+            <div class="car-container" id="car-list">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="logo"><span class="text-white">Sewa</span><span class="text-orange">Mobil</span></div>
+                <p>Kami menyediakan layanan penyewaan mobil terbaik dengan berbagai pilihan kendaraan untuk kebutuhan pribadi maupun perusahaan.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#armada">Armada</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col contact-col">
+                <h3>Kontak Info</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. Sudirman No. 123, Jember</li>
+                    <li><i class="fas fa-phone-alt"></i> +62 812 3456 7890</li>
+                    <li><i class="fas fa-envelope"></i> sewamobil@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SewaMobil. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

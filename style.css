@@ -1,0 +1,459 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-blue: #2563eb;
+    --primary-orange: #f59e0b;
+    --text-dark: #1f2937;
+    --text-gray: #6b7280;
+    --bg-light: #f8fafc;
+    --bg-card: #f1f5f9;
+    --footer-bg: #1e293b;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Utilities */
+.text-blue { color: var(--primary-blue); }
+.text-orange { color: var(--primary-orange); }
+.text-white { color: #ffffff; }
+
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links {
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a.active-link,
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-login {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #1d4ed8;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: var(--bg-light);
+    min-height: 80vh;
+}
+
+.hero-left {
+    flex: 1;
+    padding-right: 3rem;
+    z-index: 2;
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.hero-left p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: flex-end;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    gap: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    padding: 0.7rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn-search {
+    background-color: var(--primary-blue);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.btn-search:hover {
+    background-color: #1d4ed8;
+}
+
+.car-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* REVISI CSS KOTAK ILUSTRASI MENJADI GAMBAR RESPONSIVE */
+.hero-image {
+    width: 100%;
+    max-width: 600px; /* Diperbesar sedikit agar mobil terlihat jelas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Memberikan efek bayangan jatuh pada mobil transparan agar lebih realistis */
+    filter: drop-shadow(0 20px 15px rgba(0,0,0,0.15));
+    animation: float 4s ease-in-out infinite; /* Efek melayang halus (opsional) */
+}
+
+/* Animasi melayang untuk gambar mobil */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* --- Features (Layanan) --- */
+.features {
+    padding: 5rem 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--bg-card);
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-blue);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 1.5rem auto;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+/* --- Fleet Section (Armada) --- */
+.fleet-section {
+    padding: 5rem 5%;
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.car-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 1.5rem;
+}
+
+.car-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.car-info p {
+    color: var(--text-gray);
+    margin-bottom: 0.5rem;
+}
+
+.car-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+}
+
+.btn-sewa {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-sewa:hover {
+    background-color: #1d4ed8;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--footer-bg);
+    color: #e2e8f0;
+    padding: 4rem 5% 1rem 5%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.brand-col p {
+    margin: 1.5rem 0;
+    color: #94a3b8;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #334155;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-blue);
+}
+
+.footer-col h3 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.links-col ul, .contact-col ul {
+    list-style: none;
+}
+
+.links-col ul li, .contact-col ul li {
+    margin-bottom: 1rem;
+}
+
+.links-col ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links-col ul li a:hover {
+    color: #fff;
+}
+
+.contact-col ul li i {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #334155;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    .hero-left {
+        padding-right: 0;
+    }
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .feature-cards {
+        flex-direction: column;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        text-align: center;
+        padding: 1rem 0;
+        border-top: 1px solid #e5e7eb;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hero-left h1 {
+        font-size: 2.2rem;
+    }
+    .hero-image {
+        max-width: 100%;
+    }
+}
