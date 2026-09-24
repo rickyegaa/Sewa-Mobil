@@ -4,14 +4,12 @@ Proyek ini adalah *slicing* tampilan landing page penyewaan mobil (Car Rental) y
 
 ## 🔗 Link Deployment & Repositori
 
-* **Live Demo / Deployment:** [https://nama-project-kamu.vercel.app](https://nama-project-kamu.vercel.app) *(Ganti dengan link Netlify/Vercel/GitHub Pages milikmu)*
-* **Repository GitHub:** [https://github.com/username-kamu/sewa-mobil](https://github.com/username-kamu/sewa-mobil) *(Ganti dengan link GitHub milikmu)*
+* **Live Demo / Deployment:** [https://nama-project-kamu.vercel.app](https://nama-project-kamu.vercel.app)
+* **Repository GitHub:** [https://github.com/username-kamu/sewa-mobil](https://github.com/username-kamu/sewa-mobil)
 
 ---
 
 ## 📸 Preview Tampilan
-
-*(Upload gambar screenshot websitemu ke folder project atau GitHub, lalu ganti nama file `screenshot.png` di bawah ini)*
 
 ![Preview Tampilan Website](./image/Car-Rental.png)
 
