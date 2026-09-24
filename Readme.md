@@ -4,8 +4,8 @@ Proyek ini adalah *slicing* tampilan landing page penyewaan mobil (Car Rental) y
 
 ## 🔗 Link Deployment & Repositori
 
-* **Live Demo / Deployment:** [https://nama-project-kamu.vercel.app](https://sewa-mobil-nu.vercel.app/)
-* **Repository GitHub:** [https://github.com/username-kamu/sewa-mobil](https://github.com/rickyegaa/Sewa-Mobil)
+* **Live Demo / Deployment:** (https://sewa-mobil-nu.vercel.app/)
+* **Repository GitHub:** (https://github.com/rickyegaa/Sewa-Mobil)
 
 ---
 
