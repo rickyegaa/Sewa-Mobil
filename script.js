@@ -9,19 +9,19 @@ hamburger.addEventListener('click', () => {
 const carsData = [
     {
         name: "Toyota Avanza",
-        type: "MPV - 5 Penumpang",
+        type: "Avanza - 5 Penumpang",
         price: "Rp 350.000 / hari",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcvGFvLthBnWVCGZAL4mMkggFqI-XSa5ylz2NWZSUHJQKvJwvo1Hg_hU&s=10"
     },
     {
         name: "Honda Civic",
-        type: "Sedan - 5 Penumpang",
+        type: "Civic - 5 Penumpang",
         price: "Rp 750.000 / hari",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkl9Ttn9KVjpIYDqivonChvj1R14K3tuER8TiB184T4A&s=10"
     },
     {
         name: "Mitsubishi XForce",
-        type: "SUV - 5 Penumpang",
+        type: "XForce - 5 Penumpang",
         price: "Rp 1.000.000 / hari",
         img: "https://www.dipostar.com/storage/news/vn0X3DTCBmOk0OI95765eUTlsyHfydvaZK2AVHjm.png"
     }
